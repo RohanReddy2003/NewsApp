@@ -17,7 +17,7 @@ const News = (props) => {
   useEffect(() => {
     document.title = `News Monkey-${props.category}`;
     updateNews();
-  }, [page, props.category,updateNews]);
+  }, [page, props.category]);
 
   const updateNews = async () => {
     props.setProgress(10);
